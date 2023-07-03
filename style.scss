@@ -294,6 +294,61 @@
         padding-top: 28px;
     }
 }
+.footer {
+    margin-top: -1px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    flex-shrink: 0;
+    background: #010632;
+    &_end {
+        color: #FFF;
+        text-align: center;
+        /* h3 основной */
+        font-size: 24px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    &_title {
+        text-align: center;
+        padding-top: 5px;
+    }
+    &_div {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        &_ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            width: 500px;
+            &_li {
+                color: #FFF;
+                /* h3 основной */
+                font-size: 24px;
+                font-family: Jost;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        &_icons {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 35px;
+            align-items: center;
+            &_img {
+                width: 65.045px;
+                height: 64px;
+            }
+        }
+    }
+}
 @media screen and (max-width:1200px) {
     .blueblock {
         height: 700px;
@@ -392,6 +447,24 @@
             margin: 0 auto;
         }
     }
+    .footer {
+        &_div {
+            &_icons {
+                column-gap: 15px;
+                &_img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            &_ul {
+                row-gap: 10px;
+                &_li {
+                    font-size: 18px;
+                }
+            }
+        }
+        
+    }
 }
 @media screen and (max-width:700px) {
     .blueblock {
@@ -460,6 +533,24 @@
         height: 900px;
         &_title {
             line-height: 30px;
+        }
+    }
+    .footer {
+        &_div {
+            flex-direction: column;
+            &_ul {
+                width: 100%;
+                &_li {
+                    font-size: 14px;
+                }
+            }
+            &_icons {
+                width:150px;
+                margin: 0 auto;
+            }
+        }
+        &_end {
+            font-size: 18px;
         }
     }
 }
